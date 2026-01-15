@@ -11,14 +11,12 @@ Polyphonic 18 oscillator (9 sinusodial, 9 sawtooth) alias-free synthesiser with 
 
 developed by Visstup (Rittik Wystup)
 Compiled by Faust
-<http://faust.grame.fr>
 
-This project won the Faust Student Award 2018. Many thanks to the jury for deciding on this project! :)
+This project won the Faust Student Award 2018. Many thanks to the jury for deciding on this project!
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation.
-<https://www.gnu.org/licenses/lgpl-3.0.en.html>
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -41,9 +39,6 @@ Place vicegenerator.vst to your VST directory.
 ~/Library/Audio/Plug-Ins/VST (Mac)
 
 C:\Program Files\VSTPlugins (Windows) - use vicegenerator.dll
-// if this doesn't work out, see the suggestions on the Steinberg website:
-<https://helpcenter.steinberg.de/hc/en-us/articles/115000177084-VST-plug-in-locations-on-Windows>
-— unfortunately, the .dll compiled by the Faust online editor is faulty. Sorry Windows users, I will fix this in the future.
 
 usr/lib/vst (Linux)
 
@@ -65,12 +60,9 @@ The package contains two audio demos of the synthesiser:
 ViceGenerator_inAction.mp3 - a raw unedited demo of the synthesiser
 Fraction_Premaster.mp3 - a track I created, using only the Vice Generator as a pitched synthesis source (see the documentation for more details).
 
-I also have a clip on YouTube demonstrating the synthesiser.
-https://youtu.be/3uzxZlojxuI
-
 
 If you find any further problems or have any questions please let me know.
-// rittik.wystup@gmail.com
+
 
 For nerds:
 vicegenerator_blockdiagram.svg is a block diagram created by Faust. Open in your browser to view the signal path of the synth.
