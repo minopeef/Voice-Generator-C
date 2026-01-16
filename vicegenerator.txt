@@ -8,12 +8,6 @@ declare version "0.0";
 
 import("stdfaust.lib");
 
-
-//option: pow(freq,mod), exact modulation (obviously better than multiplication)
-//mychaosMul(mychaosbw,chaos) = (chaos * (os.osc(mychaosbw)*0.01 + 1));
-
-//pow((freqSaw * spread(i,spreadamt)),mychaosMul(mychaosbw,chaos));
-
 //declaring 9 parallel sawtooth oscillators
 mySaw(freq,spreadamt,mychaosbw,chaos) = par(i,9,sawt(freq,i,mychaosbw,chaos)) :> _
 with{
@@ -55,8 +49,7 @@ with{
 };
 
 //declaring signal path
-/*   path: oscillators, distortion, filter
-*/
+//path: oscillators, distortion, filter
     vicegen(freq,spreadAmt,mychaosbw,chaos,synthselect,richness,filtertog,lowp)
           = mySaw(freq,spreadAmt,mychaosbw,chaos) * (synthselect == 0),
           mySine(freq,spreadAmt,mychaosbw,chaos) * (synthselect == 1) :> _*(0.2)
@@ -69,7 +62,6 @@ with{
                           cubic(x) = x - x*x*x/3;
             }
              <: _*(filtertog == 0),fi.lowpass3e(lowp)*(filtertog == 1) :> _;
-//pregain = pow(10,richness*2);
 
 //declaring the envelope of the gate
     envlop(att,dec,sus,rel,gate,gain) = en.adsr(att,dec,sus,rel,gate) * gain;
