@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------
 name: "Vice Generator"
 version: "0.0"
-Code generated with Faust 2.5.10 (https://faust.grame.fr)
+Code generated with Faust 2.5.10
 Compilation options: -scal -ftz 0
 ------------------------------------------------------------ */
 

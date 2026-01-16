@@ -1,0 +1,33 @@
+# Compiled binaries
+*.dll
+*.vst
+*.vst3
+*.component
+*.so
+*.dylib
+
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.zip
+
+# Audio demos
+*.mp3
+*.wav
+*.aiff
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archive files
+*.zip
+*.tar.gz
